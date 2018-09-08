@@ -111,7 +111,7 @@ if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine'):
             'HOST': '/cloudsql/medhacks-2018-215806:us-east4:medhacks-2018',
             'NAME': 'testdb',
             'USER': 'admin',
-			'PORT': '3306',
+	    'PORT': '3306',
             'PASSWORD': '',
         }
     }
@@ -125,7 +125,7 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'HOST': '127.0.0.1',
+            'HOST': '/home/sg/Downloads/cloudsql/medhacks-2018-215806:us-east4:medhacks-2018',
             'PORT': '3306',
             'NAME': 'testdb',
             'USER': 'admin',
